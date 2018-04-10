@@ -35,4 +35,9 @@ Public Class EmployeesHelper
         employees.Remove(employees.Find(Function(empl) empl.Id = id))
         My.Computer.FileSystem.WriteAllText(IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, pathToJson), JsonConvert.SerializeObject(employees), False)
     End Function
+
+    Public Function AddEmployee(employee As EmployeeModel)
+        employees.Add(employee)
+        My.Computer.FileSystem.WriteAllText(IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, pathToJson), JsonConvert.SerializeObject(employees), False)
+    End Function
 End Class

@@ -1,5 +1,6 @@
 ﻿Imports System.Web.Http
 Imports EmployeesLibrary
+Imports Newtonsoft.Json
 
 Public Class EmployeesController
     Inherits ApiController
@@ -15,18 +16,21 @@ Public Class EmployeesController
         Return employees
     End Function
 
-
     ' GET api/employees/117
     Public Function GetEmployee(ByVal id As Integer) As String
         Return eh.GetEmployeeById(id).ToString()
     End Function
 
+    ' Receives data in format:
+    ' Content-Type:application/json
+    ' body: "{'Id':123, 'FirstName':'Name', 'LastName':'Lastname', 'Mail':'example@mail.com'}"
+    '
     ' POST api/employees
-    Public Sub PostEmployee(<FromBody()> ByVal value As String)
-
+    Public Sub PostEmployee(<FromBody()> ByVal body As String)
+        eh.AddEmployee(JsonConvert.DeserializeObject(Of EmployeeModel)(body))
     End Sub
 
-    ' DELETE api/employees/5
+    ' DELETE api/employees/117
     Public Sub DeleteEmployee(ByVal id As Integer)
         eh.DeleteEmployee(id)
     End Sub
