@@ -26,7 +26,7 @@ Public Class EmployeesController
 
     End Sub
 
-    ' DELETE api/employees/5
+    ' DELETE api/employees/2
     Public Sub DeleteEmployee(ByVal id As Integer)
         eh.DeleteEmployee(id)
     End Sub
