@@ -30,7 +30,7 @@ Public Class EmployeesController
         eh.AddEmployee(JsonConvert.DeserializeObject(Of EmployeeModel)(body))
     End Sub
 
-    ' DELETE api/employees/117
+    ' DELETE api/employees/5
     Public Sub DeleteEmployee(ByVal id As Integer)
         eh.DeleteEmployee(id)
     End Sub
