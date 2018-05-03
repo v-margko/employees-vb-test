@@ -28,7 +28,7 @@ Public Class EmployeesHelper
     End Function
 
     Public Function GetEmployeeByName(name As String) As EmployeeModel
-        Return employees.Find(Function(empl) name.Contains(empl.FirstName))
+        Return employees.Find(Function(empl) empl.FirstName.Contains(name) Or empl.LastName.Contains(name))
     End Function
 
     Public Function DeleteEmployee(id As Integer)

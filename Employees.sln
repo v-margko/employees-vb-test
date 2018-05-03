@@ -11,6 +11,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EmployeesWebAPI", "Employee
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EmployeesWindowsForms", "EmployeesWindowsForms\EmployeesWindowsForms.vbproj", "{D34305A8-334D-4DD8-AFE3-7F7D4657D07D}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EmployeesTests", "EmployeesTests\EmployeesTests.vbproj", "{992CCC86-AEB2-4EAF-ACB0-F93B7AE0D832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D34305A8-334D-4DD8-AFE3-7F7D4657D07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D34305A8-334D-4DD8-AFE3-7F7D4657D07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D34305A8-334D-4DD8-AFE3-7F7D4657D07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992CCC86-AEB2-4EAF-ACB0-F93B7AE0D832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992CCC86-AEB2-4EAF-ACB0-F93B7AE0D832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992CCC86-AEB2-4EAF-ACB0-F93B7AE0D832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992CCC86-AEB2-4EAF-ACB0-F93B7AE0D832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
